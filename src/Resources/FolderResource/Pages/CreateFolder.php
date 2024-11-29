@@ -2,9 +2,9 @@
 
 namespace TomatoPHP\FilamentMediaManager\Resources\FolderResource\Pages;
 
+use App\Filament\Resources\BaseClasses\CreateRecord;
 use TomatoPHP\FilamentMediaManager\Resources\FolderResource;
 use Filament\Actions;
-use Filament\Resources\Pages\CreateRecord;
 
 class CreateFolder extends CreateRecord
 {

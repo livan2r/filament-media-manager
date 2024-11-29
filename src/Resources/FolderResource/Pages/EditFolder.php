@@ -2,9 +2,9 @@
 
 namespace TomatoPHP\FilamentMediaManager\Resources\FolderResource\Pages;
 
+use App\Filament\Resources\BaseClasses\EditRecord;
 use TomatoPHP\FilamentMediaManager\Resources\FolderResource;
 use Filament\Actions;
-use Filament\Resources\Pages\EditRecord;
 
 class EditFolder extends EditRecord
 {
@@ -13,7 +13,8 @@ class EditFolder extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            Actions\DeleteAction::make(),
+            Actions\DeleteAction::make()
+                ->icon('heroicon-o-trash'),
         ];
     }
 }
